@@ -31,7 +31,7 @@ export default class Header extends React.Component {
                                     <Link className="nav-link  link-hover" to="/services">Services</Link>
                                     <div className="services-content">
                                         <ul>
-                                            <li><Link to="" className="text-decoration-none link">IT Software</Link></li>
+                                            <li><Link to="" className="text-decoration-none link">It Software</Link></li>
                                             <li><Link to="" className="text-decoration-none link">BPO</Link></li>
                                             <li><Link to="" className="text-decoration-none link">Accoutns</Link></li>
                                             <li><Link to="" className="text-decoration-none link">Sale </Link></li>

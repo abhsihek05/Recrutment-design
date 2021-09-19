@@ -1,0 +1,79 @@
+.navbar-collapse .link-hover{
+    color: black;
+    transition: width 2s, height 2s, border 2s;
+  
+}
+.navbar-collapse .link-hover:focus {
+    background-color: black;
+    color: white;
+}
+.navbar-collapse .link-hover:hover {
+    color: white;
+   border-bottom: 1px solid white;
+}
+.navbar-collapse .services-li{
+    position: relative;
+}
+.navbar-collapse .services-content {
+    position: absolute;
+    left: 0%;
+    width: 200%;
+    height: auto;
+    display: none;
+    background-color:rgb(207, 161, 161);
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px lightgrey;
+    transition: all 0.5s;
+    z-index: 10;
+}
+.navbar-collapse .services-li:hover .services-content {
+    display: block;
+}
+.navbar-collapse .services-content ul {
+    list-style-type: none;
+    border-radius: 5px;
+    text-transform: capitalize;
+}
+.navbar-collapse .services-content ul li .link {
+    font-size: 16px;
+   color: black;
+    
+}
+.navbar-collapse .services-content ul li .link:hover {
+    cursor: pointer;
+    opacity: 1;
+    color : white;
+}
+.nav-top-header {
+    width: 100%;
+    position: sticky;
+    top: 0px;
+    z-index: 20;
+    background-color: rgb(207, 161, 161);
+}
+.mobile-header{
+    display: none;
+}
+
+@media only screen and (max-width:998px) {
+.mobile-header{
+    display: block;
+}
+}
+#mobile-search-bar{
+    width: 75%;
+    height: 30px;
+    border-radius: 3px;
+    outline: none;
+    padding: 3px 10px;
+    border: 1px solid black;
+}
+.mobile-search-btn{
+    border: 1px solid black;
+    border-radius: 3px;
+    background-color: green;
+    color: white;
+    padding: 2px 3px;
+    margin-left: 2%;
+
+}

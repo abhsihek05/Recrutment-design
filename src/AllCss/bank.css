@@ -1,0 +1,13 @@
+.parent-bank {
+    
+}
+
+.parent-bank div{
+    width: 200px;
+    height: 200px;
+    background-color: white;
+    z-index: 10;
+}   
+.parent-bank div img {
+    width: 200px;
+}

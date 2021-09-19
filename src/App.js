@@ -1,25 +1,49 @@
-import logo from './logo.svg';
-import './App.css';
+// import { router } from "json-server";
+import React, { createContext, Suspense } from "react";
+import { BrowserRouter, Switch, Route } from "react-router-dom";
+import AboutClint from "./Components/AboutClint";
+import Child from "./Components/Child";
+import { Benifits } from "./Components/Footer";
+import Header from "./Components/Header";
+import Parent from "./Components/Parent";
+const Home = React.lazy(() => import("./Components/Home"));
+const Contact = React.lazy(() => import("./Components/Contact"));
+const Clint = React.lazy(() => import("./Components/Clint"));
+const Footer = React.lazy(()=> import("./Components/Footer"));
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+
+const Fname = createContext();
+
+export default class App extends React.Component {
+  constructor(props) {
+    super(props);
+
+  }
+  render() {
+    return (
+      <>
+
+        <BrowserRouter>
+          <Header />
+          <Switch>
+            <Suspense fallback={<h1>loading..</h1>}>
+              <Route exact path="/" component={Home} />
+              <Route exact path="/contact" component={Contact} />
+              <Route exact path="/clint" component={Clint} />
+              <Fname.Provider value="hello ravi-sankar">
+                <Route exact path="/clint/:id" component={AboutClint} />
+              </Fname.Provider>
+              <Benifits />
+              <Footer />
+            </Suspense>
+          </Switch> 
+          {/* <Route exact path="/parent" component={Parent} />
+          <Route exact path="/child" component={Child} /> */}
+        </BrowserRouter>
+      </>
+    )
+  }
 }
 
-export default App;
+export {Fname};

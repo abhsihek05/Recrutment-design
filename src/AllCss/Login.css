@@ -1,0 +1,44 @@
+.main-outer-div{
+    width: 100%;
+    height: 100vh;
+    background: orange;
+    background-image:url("../127303.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%,100%;
+}
+.main-login-div{
+    width: 50%;
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border: 1px solid black;
+   background-color: rgba(100, 100, 100, 0.3);
+    padding: 30px;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 5px 5px 5px grey;
+}
+.main-login-div:hover{
+    box-shadow: 5px 5px 5px lightgrey;
+    background-color: grey;
+}
+label {
+    font-weight: bold;
+    color: black;
+}
+.form-group{
+    position: relative;
+    margin-bottom: 15px;
+}
+.form-group span {
+    position: absolute;
+    bottom: -20px;
+    font-weight: bold;
+    font-size: 15px;
+    color: rgb(114, 0, 0);  
+
+}
+.form-control{
+    
+}

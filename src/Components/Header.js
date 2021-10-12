@@ -33,7 +33,7 @@ export default class Header extends React.Component {
                                         <ul>
                                             <li><Link to="" className="text-decoration-none link">It Software</Link></li>
                                             <li><Link to="" className="text-decoration-none link">BPO</Link></li>
-                                            <li><Link to="" className="text-decoration-none link">Accoutns</Link></li>
+                                            <li><Link to="" className="text-decoration-none link">Accoutns</Link></li>v
                                             <li><Link to="" className="text-decoration-none link">Sale </Link></li>
                                             <li><Link to="" className="text-decoration-none link">Banking</Link></li>
                                             <li><Link to="" className="text-decoration-none link">Laboure</Link></li>

@@ -5,11 +5,15 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 import Parent from "./Components/Parent"
+import Load from './Components/Load';
+import Check1 from './Components/Check1';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+   <App /> 
+    {/* <Load /> */}
     {/* <Parent /> */}
+    {/* <Check1 /> */}
 
   </React.StrictMode>,
   document.getElementById('root')

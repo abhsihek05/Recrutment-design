@@ -16,6 +16,8 @@ export default class Login extends React.Component {
 
         })
         return response.json();
+
+      
     }
     
 
@@ -42,27 +44,21 @@ export default class Login extends React.Component {
         if (email == "") {
             document.getElementById("email-span").innerHTML = "**please fill the value";
         }
-        if (email.charAt("@") > 2) {
+        if (!email.charAt("@") > 2) {
             document.getElementById("email-span").innerHTML = "invalid position of @";
         }
-
-
-
         if (pass == "") {
             document.getElementById("pass-span").innerHTML = "**please fill the value";
         }
         if ((pass.length < 5 && pass.length > 0) || (pass.length > 20)) {
             document.getElementById("pass-span").innerHTML = "**short pass word is not accepted";
         }
-        // if(!name.isCharAt('*')){
-        //     document.getElementById("pass-span").innerHTML = "**Included * in password";;
-        // }
 
         if (phone == "") {
-            document.getElementById("phone-span").innerHTML = "**please fill the value";
+            document.getElementById("phone-span").innerHTML = "**please fill the phone number";
         }
 
-        if ((phone.length <= 9 && phone.length > 0)) {
+        if ((phone.length < 9 && phone.length > 0)) {
             document.getElementById("phone-span").innerHTML = "**phone number must be in 10 character's";
         }
 
@@ -71,13 +67,19 @@ export default class Login extends React.Component {
             console.log(data);
         });
        
+
+        this.props.history.push("http://localhost:3000/"); 
+        
     }
 
-   
 
 
-    handleChange = (e)=> {
-        console.log(e.target.name)
+      
+
+    handleChange = (event)=> {
+        let obj = this.state.Formdata;
+        obj[event.target.name] = event.target.value;
+        this.setState({ Formdata: obj });
     }
 
     render() {

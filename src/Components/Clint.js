@@ -10,8 +10,10 @@ export default class Clint extends React.Component {
         this.state = {
             SingleData: []
          }
-
     }
+
+
+    
 
     componentDidMount() {
         //    this.setState({ram:"abhishek"});

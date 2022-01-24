@@ -11,28 +11,26 @@ export default class Bank extends React.Component {
         return (
             <>
                 <h1 className="text-center text-capitalize p-3 text-secondary">banking sector </h1>
-                <Carousel>
-                    <Carousel.Item>
-                        <div className="parent-bank container d-flex justify-content-md-around">
-                            <div className-="child-bank-div">
-                                <img src="./hdfc.png" alt="" />
-                                <span>hdfc bacnk</span>
-                            </div>
-                            <div className-="child-bank-div" >
-                                <img src="./icic.png" alt="" />
-                                <span>hdfc bacnk</span>
-                            </div>
-                            <div className-="child-bank-div" >
-                                <img src="./urlbank.png" alt="" />
-                                <span>hdfc bacnk</span>
-                            </div>
-                            <div className-="child-bank-div" >
-                                <img src="./union.png" alt="" />
-                                <span>hdfc bacnk</span>
-                            </div>
+                <div className="container">
+                    <div className="row">
+                        <div className="col-md-3 bg-dark col-sm-12">
+                           
+                            <img src="./statebank.png" className="w-100" />
                         </div>
-                        </Carousel.Item>
-                    </Carousel>
+                        <div className="col-md-3 bg-danger col-sm-12">
+                       
+                        <img src="./statebank.png" className="w-100" />
+                        </div>
+                        <div className="col-md-3 bg-light col-sm-12">
+                       
+                        <img src="./Yes_bank_logo.png" className="w-100"/>
+                        </div>
+                        <div className="col-md-3 bg-primary col-sm-12">
+                       
+                        <img src="./statebank.png" className="w-100" />
+                        </div>
+                    </div>
+                </div>
             </>
         )
     }

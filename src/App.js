@@ -1,6 +1,9 @@
 // import { router } from "json-server";
+import "./App.css"
 import React, { createContext, Suspense } from "react";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
+
+
 import AboutClint from "./Components/AboutClint";
 import Check from "./Components/Check";
 import Child from "./Components/Child";
@@ -9,6 +12,10 @@ import Header from "./Components/Header";
 import Parent from "./Components/Parent";
 import PopUp from "./Components/PopUp";
 import NodeState from "./Context/Node/NodeState";
+import todoList from "./Components/TodoList";
+
+
+
 const Home = React.lazy(() => import("./Components/Home"));
 const Contact = React.lazy(() => import("./Components/Contact"));
 const Clint = React.lazy(() => import("./Components/Clint"));
@@ -40,7 +47,8 @@ export default class App extends React.Component {
   render() {
     return (
       <>
-        <NodeState>
+      <h1>hellow akey singh</h1>
+        {/* <NodeState>
           <BrowserRouter>
           {this.state.senn ? <PopUp popup={this.TogalePop}/>:null }
             <Header />
@@ -57,9 +65,10 @@ export default class App extends React.Component {
               </Suspense>
             </Switch>
             {/* <Route exact path="/parent" component={Parent} />
-          <Route exact path="/child" component={Child} /> */}
-          </BrowserRouter>
-        </NodeState>
+             <Route exact path="/child" component={Child} /> */}
+          {/* </BrowserRouter> */}
+        {/* </NodeState>  */}
+        <todoList />
 
       </>
     )

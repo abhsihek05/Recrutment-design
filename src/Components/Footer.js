@@ -63,24 +63,24 @@ export class Benifits extends React.Component {
                 <div className="benifits-parents container text-center ">
                     <div className="row">
                         <div className="col-md-3">
-                            <img src="./react.png" style={{width:"120px",height:"100px"}} />
+                            <img src="./react.png" style={{ width: "120px", height: "100px" }} />
                             <h5>A Trust network</h5>
                             <p className="p-3 text-secondary text-capitalize">Contineu and contact with the genration  graduate network </p>
                         </div>
                         <div className="col-md-3">
-                        <img src="./jar.png" style={{width:"120px",height:"100px"}} />
-                        <h5>Event</h5>
-                        <p className="p-3 text-secondary text-capitalize">Event and workshop to help you keep growing</p>
+                            <img src="./jar.png" style={{ width: "120px", height: "100px" }} />
+                            <h5>Event</h5>
+                            <p className="p-3 text-secondary text-capitalize">Event and workshop to help you keep growing</p>
                         </div>
                         <div className="col-md-3 ">
-                        <img src="./bulb.png" style={{width:"120px",height:"100px"}} />
-                        <h5>Give back</h5>
-                        <p className="p-3 text-secondary text-capitalize">became a mentor to help other</p>
+                            <img src="./bulb.png" style={{ width: "120px", height: "100px" }} />
+                            <h5>Give back</h5>
+                            <p className="p-3 text-secondary text-capitalize">became a mentor to help other</p>
                         </div>
                         <div className="col-md-3">
-                        <img src="./hand.png" style={{width:"120px",height:"100px"}} />
-                        <h5>Support</h5>
-                        <p className="p-3 text-secondary text-capitalize">trubleshoot your job chalenge</p>
+                            <img src="./hand.png" style={{ width: "120px", height: "100px" }} />
+                            <h5>Support</h5>
+                            <p className="p-3 text-secondary text-capitalize">trubleshoot your job chalenge</p>
                         </div>
                     </div>
                 </div>

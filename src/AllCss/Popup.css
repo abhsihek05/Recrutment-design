@@ -1,0 +1,55 @@
+.parent-popup-div {
+    position: relative;
+    padding: 10px;
+}
+.popupheading {
+    width: 40%;
+    height: 50%;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    margin: auto;
+    z-index: 100;
+    background-color:lightgrey;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px lightgrey;
+  }
+
+  .popupcross {
+    color: black;
+    font-weight: 700;
+    cursor: pointer;
+    padding: 10px;
+    color: black;
+  }
+  .popupcross:hover {
+      cursor: pointer;
+  }
+  .NumberPop {
+      border: none;
+      outline: none;
+      border-bottom: 1px solid black;
+      width: 50%;
+      opacity: 0.9;
+      padding: 4px 10px; 
+  }
+  
+  .contentpop {
+    padding: 50px;
+  }
+  .btn-pop {
+      border: none;
+      background-color: green;
+      outline: none;
+      border-radius: 5px;
+      padding: 5px;
+      color: black;
+      font-weight: 600;
+  }
+  .btn-pop:hover {
+      background-color: blue;
+      color: white;
+      font-weight: 700;
+    
+  }

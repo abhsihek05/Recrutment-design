@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from 'react-router-dom';
 import '../AllCss/Header.css';
-import { IoLogoAngular } from "react-icons/io";
+// import { IoLogoAngular } from "react-icons/io";
 import { BsList } from "react-icons/bs";
 import { FaCartPlus } from "react-icons/fa";
 
